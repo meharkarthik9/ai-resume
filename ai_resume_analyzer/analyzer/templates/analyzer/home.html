@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Analyzer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        textarea, input[type="file"] {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            background: #0f172a;
+            color: #e2e8f0;
+            outline: none;
+        }
+
+        textarea::placeholder {
+            color: #64748b;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px;
+            width: 100%;
+            background: #38bdf8;
+            color: #0f172a;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+
+        .section-title {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #94a3b8;
+        }
+
+        .score {
+            font-size: 26px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .high { color: #22c55e; }
+        .medium { color: #facc15; }
+        .low { color: #ef4444; }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .analysis {
+            background: #020617;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border-left: 4px solid #38bdf8;
+        }
+
+        .warning {
+            color: #facc15;
+        }
+
+        .error {
+            color: #ef4444;
+        }
+
+        .success {
+            color: #22c55e;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 22px;
+            }
+
+            .card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AI Resume Analyzer</h1>
+
+    <div class="card">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <h3>Upload Resume</h3>
+            <input type="file" name="resume">
+
+            <h3>Enter Job Description</h3>
+            <textarea name="jd" rows="5" placeholder="Paste job description here..."></textarea>
+
+            <button type="submit">Analyze Resume</button>
+        </form>
+    </div>
+
+    {% if score is not None %}
+
+    <div class="card">
+
+        <h2>Results</h2>
+
+        <div class="section-title">Skill Match Score</div>
+        <p class="score {% if score >= 70 %}high{% elif score >= 40 %}medium{% else %}low{% endif %}">
+            {{ score }}%
+        </p>
+
+        <div class="section-title">Semantic Match Score (AI)</div>
+        <p class="score {% if semantic_score >= 60 %}high{% elif semantic_score >= 30 %}medium{% else %}low{% endif %}">
+            {{ semantic_score }}%
+        </p>
+
+        <div class="section-title">Missing Skills</div>
+
+        {% if missing_skills|length > 0 %}
+            <ul>
+                {% for skill in missing_skills %}
+                    <li class="error">{{ skill }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            {% if score == 100 %}
+                <p class="success">You match all required skills ✔</p>
+            {% else %}
+                <p class="warning">No recognizable skills found in job description</p>
+            {% endif %}
+        {% endif %}
+
+        <div class="section-title">Analysis</div>
+        <div class="analysis">
+
+            You match <strong>{{ score }}%</strong> of required skills.<br><br>
+
+            {% if missing_skills|length > 0 %}
+                Missing skills: <strong>{{ missing_skills|join:", " }}</strong>
+            {% elif score == 100 %}
+                You meet all required requirements.
+            {% else %}
+                Unable to determine required skills from job description.
+            {% endif %}
+
+        </div>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
