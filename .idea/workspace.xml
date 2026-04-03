@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5646eae2-5dbc-48a2-ba79-5cdf80754ee6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ai_resume_analyzer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai_resume_analyzer/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/templates/analyzer/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/utils/matcher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/utils/parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/utils/skills.py" afterDir="false" />
-    </list>
+    <list default="true" id="5646eae2-5dbc-48a2-ba79-5cdf80754ee6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
