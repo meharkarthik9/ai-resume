@@ -6,27 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5646eae2-5dbc-48a2-ba79-5cdf80754ee6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/ai_resume_analyzer/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/ai_resume_analyzer/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/ai_resume_analyzer/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/ai_resume_analyzer/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/ai_resume_analyzer/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/templates/analyzer/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/templates/analyzer/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/utils/matcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/utils/matcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/utils/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/utils/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/utils/skills.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/utils/skills.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/analyzer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_resume_analyzer/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/utils/matcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/utils/matcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
